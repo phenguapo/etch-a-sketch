@@ -11,11 +11,11 @@ header {
 
 body {
   background-color: rgb(13, 92, 92);
+  font-family: "Courier New", Courier, monospace;
 }
 
 header h1 {
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
   color: #000;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -65,7 +65,7 @@ button {
   border: none;
   border-radius: 6px;
   background-color: teal;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: "Courier New", Courier, monospace;
@@ -92,6 +92,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  font-weight: bold;
 }
 
 footer a {
@@ -99,4 +100,14 @@ footer a {
   text-decoration: none;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   
+  
+}
+
+a {
+  color: inherit; /* Removes the default link color */
+  text-decoration: none; /* Removes underlines from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover for visual feedback */
 }
